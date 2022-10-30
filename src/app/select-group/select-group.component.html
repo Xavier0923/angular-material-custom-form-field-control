@@ -1,0 +1,13 @@
+<mat-select style="width:50px" [(ngModel)]="value.publishHour">
+  <mat-option *ngFor="let hour of hour_Option" [value]="hour">{{
+    hour
+  }}</mat-option>
+</mat-select>
+：
+<mat-select style="width:50px" [(ngModel)]="value.publishMinute">
+  <mat-option *ngFor="let minute of minute_Option" [value]="minute">{{
+    minute
+  }}</mat-option>
+</mat-select>
+
+{{ value | json }}

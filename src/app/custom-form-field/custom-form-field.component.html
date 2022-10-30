@@ -1,0 +1,9 @@
+<mat-form-field style="width:300px;" appearance="fill">
+  <mat-label>預計發布時間</mat-label>
+  <app-select-group
+    style="display:flex;justify-content: end"
+    [value]="publishTime"
+  ></app-select-group>
+</mat-form-field>
+
+{{ publishTime | json }}
